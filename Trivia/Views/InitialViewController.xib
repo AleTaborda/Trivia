@@ -50,7 +50,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMg-6u-Lpj">
-                    <rect key="frame" x="57" y="645" width="300" height="45"/>
+                    <rect key="frame" x="57" y="587" width="300" height="45"/>
                     <color key="backgroundColor" red="0.88198390151515149" green="0.021863716230552051" blue="0.45083104480779657" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="300" id="0MN-eS-80Y"/>
@@ -78,7 +78,7 @@
                 <constraint firstItem="nIu-jx-Pmv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="VrL-QV-okV"/>
                 <constraint firstItem="wVT-vn-mqd" firstAttribute="top" secondItem="nIu-jx-Pmv" secondAttribute="bottom" constant="8" symbolic="YES" id="ZZp-Ga-e6P"/>
                 <constraint firstItem="lMe-6B-bme" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="58" id="aY2-iv-hsh"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="UMg-6u-Lpj" secondAttribute="bottom" constant="172" id="kEH-o3-CPh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="UMg-6u-Lpj" secondAttribute="bottom" constant="230" id="kEH-o3-CPh"/>
                 <constraint firstItem="lMe-6B-bme" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="qz2-Np-ocH"/>
                 <constraint firstItem="DBq-AX-GMp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="seJ-Oy-bcd"/>
             </constraints>

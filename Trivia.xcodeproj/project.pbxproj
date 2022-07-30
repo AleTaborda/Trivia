@@ -10,6 +10,7 @@
 		976C5DDC2891CE0D002665CE /* UIView+vibrate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976C5DDB2891CE0D002665CE /* UIView+vibrate.swift */; };
 		976C5DDF2891EB15002665CE /* UIButton+circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976C5DDE2891EB15002665CE /* UIButton+circle.swift */; };
 		976C5DE128941702002665CE /* UIButton+pulsate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976C5DE028941702002665CE /* UIButton+pulsate.swift */; };
+		976C5DE72894C0D9002665CE /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976C5DE62894C0D9002665CE /* Question.swift */; };
 		97820CFA2890C7DB00D71B17 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97820CF82890C7DB00D71B17 /* QuestionViewController.swift */; };
 		97820CFB2890C7DB00D71B17 /* QuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97820CF92890C7DB00D71B17 /* QuestionViewController.xib */; };
 		97917FA2288C72F9009EABEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97917FA1288C72F9009EABEC /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 		976C5DDB2891CE0D002665CE /* UIView+vibrate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+vibrate.swift"; sourceTree = "<group>"; };
 		976C5DDE2891EB15002665CE /* UIButton+circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+circle.swift"; sourceTree = "<group>"; };
 		976C5DE028941702002665CE /* UIButton+pulsate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+pulsate.swift"; sourceTree = "<group>"; };
+		976C5DE62894C0D9002665CE /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		97820CF82890C7DB00D71B17 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		97820CF92890C7DB00D71B17 /* QuestionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionViewController.xib; sourceTree = "<group>"; };
 		97917FA1288C72F9009EABEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 		976C5DE528943CC6002665CE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				976C5DE62894C0D9002665CE /* Question.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97820CFA2890C7DB00D71B17 /* QuestionViewController.swift in Sources */,
+				976C5DE72894C0D9002665CE /* Question.swift in Sources */,
 				97BAC321288A02CA00A940A8 /* AppDelegate.swift in Sources */,
 				976C5DDF2891EB15002665CE /* UIButton+circle.swift in Sources */,
 				976C5DE128941702002665CE /* UIButton+pulsate.swift in Sources */,

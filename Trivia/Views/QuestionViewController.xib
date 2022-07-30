@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="questionLabel" destination="eMO-Gy-ANM" id="Gg7-Z7-z1r"/>
                 <outlet property="rightAnswer" destination="ek3-Kd-X5t" id="axX-Sb-Zn8"/>
+                <outlet property="score" destination="fDU-nQ-cR3" id="pqP-aq-sXD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="wrongAnswer" destination="g75-pI-HUB" id="MnI-OL-muV"/>
             </connections>
@@ -22,7 +23,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RANDOM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8c-1j-3pE">
-                    <rect key="frame" x="125.5" y="80" width="163" height="52"/>
+                    <rect key="frame" x="125.5" y="158" width="163" height="52"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="52" id="9WL-m5-bqU"/>
                         <constraint firstAttribute="width" constant="163" id="yEb-Vg-QRC"/>
@@ -43,14 +44,14 @@
                         <action selector="wrongAnswerTapped:" destination="-1" eventType="touchUpInside" id="xnq-nI-d9F"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMO-Gy-ANM">
-                    <rect key="frame" x="35" y="329" width="344" height="144"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMO-Gy-ANM">
+                    <rect key="frame" x="35" y="329" width="344" height="200"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="344" id="jfc-S0-ye2"/>
-                        <constraint firstAttribute="height" constant="144" id="rSt-Gz-xMy"/>
+                        <constraint firstAttribute="height" constant="200" id="rSt-Gz-xMy"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="35"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ek3-Kd-X5t">
@@ -65,20 +66,33 @@
                         <action selector="rightAnswerTapped:" destination="-1" eventType="touchUpInside" id="sdc-Mb-4rJ"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDU-nQ-cR3">
+                    <rect key="frame" x="279" y="76" width="115" height="58"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="58" id="McS-Mp-nsY"/>
+                        <constraint firstAttribute="width" constant="115" id="n0K-v9-VfA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="24"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemCyanColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ek3-Kd-X5t" secondAttribute="bottom" constant="98" id="4vM-z7-wQy"/>
-                <constraint firstItem="w8c-1j-3pE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="36" id="BYh-Ok-hhl"/>
+                <constraint firstItem="w8c-1j-3pE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="114" id="BYh-Ok-hhl"/>
                 <constraint firstItem="w8c-1j-3pE" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Pz6-qf-lQk"/>
                 <constraint firstItem="ek3-Kd-X5t" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="35" id="RPX-eT-kR4"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="g75-pI-HUB" secondAttribute="trailing" constant="35" id="T2M-aX-Aw4"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="g75-pI-HUB" secondAttribute="bottom" constant="98" id="e8Z-jq-BfH"/>
-                <constraint firstItem="eMO-Gy-ANM" firstAttribute="top" secondItem="w8c-1j-3pE" secondAttribute="bottom" constant="197" id="p1J-bj-VHa"/>
+                <constraint firstItem="eMO-Gy-ANM" firstAttribute="top" secondItem="w8c-1j-3pE" secondAttribute="bottom" constant="119" id="p1J-bj-VHa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fDU-nQ-cR3" secondAttribute="trailing" constant="20" id="rcD-EK-tnd"/>
+                <constraint firstItem="w8c-1j-3pE" firstAttribute="top" secondItem="fDU-nQ-cR3" secondAttribute="bottom" constant="24" id="u0U-NA-Wty"/>
                 <constraint firstItem="eMO-Gy-ANM" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="vdH-cv-Rfu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="fDU-nQ-cR3" secondAttribute="top" constant="-32" id="wEs-HD-rht"/>
             </constraints>
-            <point key="canvasLocation" x="109" y="58"/>
+            <point key="canvasLocation" x="-452.17391304347831" y="55.580357142857139"/>
         </view>
     </objects>
     <resources>
