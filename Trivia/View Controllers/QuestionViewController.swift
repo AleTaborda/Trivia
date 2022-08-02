@@ -8,11 +8,14 @@
 import UIKit
 
 class QuestionViewController: UIViewController {
-
+    // MARK: - Outlets
+    
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var rightAnswer: UIButton!
     @IBOutlet weak var wrongAnswer: UIButton!
     @IBOutlet weak var score: UILabel!
+    
+    // MARK: - Properties
     
     private let questions = Contenido.shared.obtenerPreguntas()
     private var currentQuestionIndex: Int = 0
@@ -31,7 +34,8 @@ class QuestionViewController: UIViewController {
         rightAnswerButton()
         wrongAnswerButton()
     }
-
+    
+    //MARK: - Trivia Buttons Right and Wrong Events
     @IBAction func rightAnswerTapped(_ sender: UIButton) {
         sender.pulsate()
         let result = validateCurrentQuestion(answer: true)

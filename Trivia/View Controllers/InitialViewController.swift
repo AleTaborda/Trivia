@@ -8,7 +8,8 @@
 import UIKit
 
 class InitialViewController: UIViewController, UITextFieldDelegate {
-
+    // MARK: - Outlets
+    
     @IBOutlet weak var userTextField: UITextField!
     
     // MARK: - View Life Cycle
@@ -19,7 +20,7 @@ class InitialViewController: UIViewController, UITextFieldDelegate {
         userTextField.delegate = self
         
     }
-
+    // MARK: - Present Navigation Button Action Event
     @IBAction func startTriviaTapped(_ sender: Any) {
         if userTextField.hasText {
             let vc = QuestionViewController (nibName: "QuestionViewController", bundle: nil)
@@ -31,13 +32,13 @@ class InitialViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: - View Methods
     
-    func placeHolder() {
+    private func placeHolder() {
         let grayPlaceholderText = NSAttributedString(string: "Escribe tu usuario...",
                                                      attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
         userTextField.attributedPlaceholder = grayPlaceholderText
     }
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    internal func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
         return false
     }
